@@ -19,7 +19,7 @@ export default function useNewsSearch(query, newsUpdate, category, dateFilter) {
     let cancel;
     axios({
       method: "GET",
-      url: `http://api.mediastack.com/v1/news?access_key=${accessKey}`,
+      url: `http://api.mediastack.com/v1/news?access_key=${accessKey}`, // https for 'Premium acc only'
       params: {
         keywords: query,
         language: "en",
