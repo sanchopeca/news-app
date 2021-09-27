@@ -1,0 +1,11 @@
+.img-hover-zoom {
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.MuiCardMedia-root {
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+}

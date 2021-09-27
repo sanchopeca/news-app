@@ -1,0 +1,88 @@
+.heroSearch {
+  height: "500px";
+  background-position: "center";
+  background-repeat: "no-repeat";
+  background-size: "cover";
+  position: "relative";
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
+  color: "#fff";
+  font-size: "4rem";
+
+  &__search-box {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+
+    &__input {
+      height: 50px;
+      width: 50px;
+      border-style: none;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: bolder;
+      letter-spacing: 2px;
+      outline: none;
+      border-radius: 25px;
+      transition: all 0.5s ease-in-out;
+      background-color: #9199a1;
+      padding-right: 40px;
+      color: #fff;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+    &__btn {
+      width: 50px;
+      height: 50px;
+      border-style: none;
+      font-size: 20px;
+      font-weight: bold;
+      outline: none;
+      cursor: pointer;
+      border-radius: 50%;
+      position: absolute;
+      right: 0px;
+      color: #ffffff;
+      background-color: transparent;
+      pointer-events: painted;
+
+      &:focus {
+        background-color: transparent;
+      }
+    }
+    &__btn:focus ~ &__input {
+      width: 300px;
+      border-radius: 0px;
+      background-color: transparent;
+      border-bottom: 2px solid #ffffff;
+      transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+    }
+
+    &__input:focus {
+      width: 300px;
+      border-radius: 0px;
+      background-color: transparent;
+      border-bottom: 2px solid #ffffff;
+      transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+
+      &::placeholder {
+        color: #f3f1f1;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: bolder;
+      }
+    }
+    &__icon {
+      position: absolute;
+      top: 50%;
+      right: 1%;
+      transform: translate(-50%, -50%);
+      font-size: 26px;
+      color: #ffffff;
+      transition: 0.2s;
+    }
+  }
+}
